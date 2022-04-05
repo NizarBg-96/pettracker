@@ -44,8 +44,9 @@
     <!-- Logo container-->
     <div>
       <a class="logo" routerLink="/index" *ngIf="navClass !== 'nav-light'">
-        <img src="assets/images/trackpet/log.jpg" class="l-dark logo-light-mode" height="24" alt="">
-        <img src="assets/images/trackpet/log.jpg" class="logo-dark-mode" height="24" alt="">
+        <img src="assets/images/trackpet/logo.jpg" class="l-dark logo-light-mode" height="50" alt="" style="border-radius: 50px">
+        My Pet Tracker
+        <img src="assets/images/trackpet/logo.jpg" class="logo-dark-mode" height="50" alt="" style="border-radius: 50px">
       </a>
 
       <ul class="buy-button list-inline mb-0" *ngIf="shopPages == true">
@@ -331,6 +332,7 @@
         <li><a routerLink="/" class="nav-link-ref">Home</a></li>
         <li class="has-submenu">
           <a href="javascript:void(0)" (click)="onMenuClick($event)">Landing</a><span class="menu-arrow"></span>
+<!--
           <ul class="submenu megamenu">
             <li>
               <ul>
@@ -417,10 +419,12 @@
               </ul>
             </li>
           </ul>
+-->
         </li>
 
         <li class="has-submenu">
-          <a href="javascript:void(0)" (click)="onMenuClick($event)">Pages</a><span class="menu-arrow"></span>
+          <a href="javascript:void(0)" (click)="onMenuClick($event)">Nos Produits</a><span class="menu-arrow"></span>
+<!--
           <ul class="submenu">
             <li class="has-submenu"><a href="javascript:void(0)" (click)="onMenuClick($event)"> Company </a><span
                 class="submenu-arrow"></span>
@@ -560,9 +564,11 @@
               </ul>
             </li>
           </ul>
+-->
         </li>
         <li class="has-submenu">
           <a href="javascript:void(0)" (click)="onMenuClick($event)">Portfolio</a><span class="menu-arrow"></span>
+<!--
           <ul class="submenu megamenu">
             <li>
               <ul>
@@ -615,15 +621,18 @@
               </ul>
             </li>
           </ul>
+-->
         </li>
         <li class="has-submenu">
           <a href="javascript:void(0)" (click)="onMenuClick($event)">Docs</a><span class="menu-arrow"></span>
+<!--
           <ul class="submenu">
             <li><a class="nav-link-ref" routerLink="/documentation">Documentation</a></li>
             <li><a class="nav-link-ref" routerLink="/changelog">Changelog</a></li>
             <li><a class="nav-link-ref" routerLink="/components">Components</a></li>
             <li><a class="nav-link-ref" routerLink="/widget">Widget</a></li>
           </ul>
+-->
         </li>
       </ul>
       <!--end navigation menu-->
